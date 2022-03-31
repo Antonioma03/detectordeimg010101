@@ -1,0 +1,7 @@
+#camara,#resultado{
+    border-color: black;
+    border-style: dashed;
+    border-width: 3px;
+    width: 350px;
+    height: 350px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dectetor de imagenes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body>
+    <center>
+        <section>
+            <h1>app de reconosimiento de imagenes</h1>
+            <h3>el modelo puese reconoser las sigientes imagenes</h3>
+            <hr>
+         <h3>objeto1</h3>
+         <hr>
+         <h3>objeto2</h3>
+         <hr>
+         <h3>objeto3</h3>
+         <hr>
+         <h3>objeto4</h3>
+         <hr>
+        </section>
+        <section>
+            <p></p>
+            <label> vista de la camara</label>
+            <p></p>
+            <div id="camara"></div>
+            
+            <p></p>
+            <label> tu objeto aparesera aqui</label>
+            <p></p>
+            <div id="resultado"></div>
+            <p></p>
+            <button id="tomarfoto" onclick="tomarfoto()">tomar foto</button>
+            <p></p>
+            <button id="identificar" onclick="identificar()">identificar</button>
+        </section>
+        <br>
+        <h3>objeto</h3>
+        <h3 id="objeto">objeto reconosido</h3>
+        <br>
+        <h3>presision</h3>
+        <h3 id="presision">presision</h3>
+    </center>
+<script src="main.js"></script>
+</body>
+</html>
